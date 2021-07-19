@@ -1,7 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import appSettingsReducer  from './reducers/appSettings'
 
 export const store = configureStore({
   reducer: {
+    appSettings: appSettingsReducer
   },
 });
 
