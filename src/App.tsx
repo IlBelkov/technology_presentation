@@ -13,7 +13,9 @@ export function App() {
 
   return (
     <div role='main' className={style.container} onClick={() => dispatch(changeTheme())}>
-      learn
+      {/*{Headers}*/}
+      {/*{Form}*/}
+      {/*{Table}*/}
     </div>
   )
 }
