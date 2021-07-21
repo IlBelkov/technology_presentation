@@ -7,8 +7,8 @@ import userEvent from '@testing-library/user-event'
 
 test('renders learn react link', () => {
   render(<Provider store={store}><App /></Provider>)
-  const button = screen.getByRole('main')
-  expect(screen.getByRole('main')).toHaveStyle('background: #fff')
-  userEvent.click(button)
-  expect(screen.queryByRole('main')).toHaveStyle('background: #000')
+  const changeTheme = screen.getByLabelText(/dark mode checkbox/)
+  expect(screen.getByRole('main') ).toHaveStyle('background: #fff')
+  userEvent.click(changeTheme)
+  expect(screen.getByRole('main') ).toHaveStyle('background: #000')
 })
