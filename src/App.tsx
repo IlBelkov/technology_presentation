@@ -12,8 +12,8 @@ export function App() {
   const style = styles(primaryColor)
 
   return (
-    <div className={style.container} onClick={() => dispatch(changeTheme())}>
-
+    <div role='main' className={style.container} onClick={() => dispatch(changeTheme())}>
+      learn
     </div>
   )
 }
