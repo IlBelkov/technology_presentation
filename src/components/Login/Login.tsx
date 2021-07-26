@@ -1,8 +1,10 @@
-import { TextFieldElement } from '../FormControl/FormControl'
+import { TextFieldElement } from '../FormControl/TextFieldElement'
 import { FormContainer } from '../FormControl/FormContainer'
 
 interface FormData {
-  email: 'email'
+  email: 'email',
+  password: 'password',
+  password_repeat: 'password_repeat'
 }
 
 export const Login = () => {
@@ -12,10 +14,16 @@ export const Login = () => {
     <FormContainer onSuccess={onSubmit}>
       <TextFieldElement
         name={'email'}
-        label={'Hallo'}
+        label={'Email'}
         type={'email'}
         required
-      />
+      /><br/>
+      <TextFieldElement
+        name={'password'}
+        label={'Password'}
+        type={'password'}
+        required
+      /><br/>
       <input type='submit' />
     </FormContainer>
   )

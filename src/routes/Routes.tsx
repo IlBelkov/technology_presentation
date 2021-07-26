@@ -1,4 +1,5 @@
 import { Route } from 'react-router-dom'
+import { LoginContainer } from '../components/Login/LoginContainer'
 import { Login } from '../components/Login/Login'
 
 export const Routes = () => {
@@ -7,8 +8,11 @@ export const Routes = () => {
       <Route
         exact
         path='/'
-        render={() => <Login />}
-      />
+      >
+        <LoginContainer>
+          <Login />
+        </LoginContainer>
+      </Route>
     </>
   )
 }

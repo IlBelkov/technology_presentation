@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84bef5db-f70e-4007-acdf-89fe481014de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FormControl/FormControl.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Routes.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Routes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/testFunctions/renderWithRedux.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/validation/index.ts" afterDir="false" />
+    <list default="true" id="84bef5db-f70e-4007-acdf-89fe481014de" name="Default Changelist" comment="gitignore">
+      <change afterPath="$PROJECT_DIR$/src/components/Login/LoginContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/login-styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-to-regexp/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-to-regexp/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-to-regexp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/path-to-regexp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormControl/FormControl.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormControl/TextFieldElement.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/theme/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/theme/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validation/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validation/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +59,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/utils" />
@@ -131,7 +125,7 @@
       <workItem from="1627033026317" duration="8505000" />
       <workItem from="1627045462039" duration="8017000" />
       <workItem from="1627111473427" duration="3483000" />
-      <workItem from="1627305211107" duration="641000" />
+      <workItem from="1627305211107" duration="10694000" />
     </task>
     <task id="LOCAL-00001" summary="feat: dark theme">
       <created>1626709006790</created>
@@ -182,7 +176,28 @@
       <option name="project" value="LOCAL" />
       <updated>1626954164496</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: container for input">
+      <created>1627306016478</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1627306016478</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gitignore">
+      <created>1627306115225</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627306115225</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: form container">
+      <created>1627310828754</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627310828754</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +223,9 @@
     <MESSAGE value="feat: added change color mode" />
     <MESSAGE value="fix: titles for tests" />
     <MESSAGE value="feat: test reducer appSettings" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: test reducer appSettings" />
+    <MESSAGE value="feat: container for input" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="feat: form container" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: form container" />
   </component>
 </project>

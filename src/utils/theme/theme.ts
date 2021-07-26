@@ -7,7 +7,6 @@ export interface DefaultTheme {
     background: string
     color: string
   }
-
 }
 
 const dark: DefaultTheme = {

@@ -16,26 +16,26 @@ export const TextFieldElement = ({
                                    name,
                                    ...rest
                                  }: TextFieldElementProps): JSX.Element => {
-
   const validation = verificationObj(required, type)
 
-  return (
-    <>
-      <Controller
-        name={name}
-        rules={validation}
-        render={({ field: { value, onChange, onBlur }, fieldState: { invalid, error } }) =>
-          <TextField
-            {...rest}
-            name={name}
-            value={value || ''}
-            onChange={onChange}
-            onBlur={onBlur}
-            error={invalid}
-            helperText={error ? (typeof parseError === 'function' ? parseError(error) : error.message) : rest.helperText}
-          />
-        }
-      />
-    </>
-  )
+    return (
+      <>
+        <Controller
+          name={name}
+          rules={validation}
+          render={({ field: { value, onChange, onBlur }, fieldState: { invalid, error } }) =>
+            <TextField
+              {...rest}
+              name={name}
+              value={value || ''}
+              onChange={onChange}
+              onBlur={onBlur}
+              type={type}
+              error={invalid}
+              helperText={error ? (typeof parseError === 'function' ? parseError(error) : error.message) : rest.helperText}
+            />
+          }
+        />
+      </>
+    )
 }

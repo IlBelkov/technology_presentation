@@ -14,6 +14,13 @@ export const verificationObj = (required: boolean | undefined, type: string | un
     }
   }
 
+  if (type === 'password') {
+    validation.minLength = {
+      value: 8,
+      message: 'The password cannot be shorter than 8 characters'
+    }
+  }
+
   return validation
 }
 

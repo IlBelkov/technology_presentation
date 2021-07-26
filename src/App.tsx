@@ -13,12 +13,12 @@ export function App() {
   const style = styles(primaryColor)
 
   return (
-    <div role='main' className={style.container}>
+    <main className={style.container}>
       <Header />
       <Routes />
       {/*{Form}*/}
       {/*{Table}*/}
-    </div>
+    </main>
   )
 }
 
