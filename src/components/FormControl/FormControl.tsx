@@ -6,7 +6,6 @@ export type TextFieldElementProps = Omit<TextFieldProps,
   'name'> & {
   validation?: ControllerProps['rules']
   name: any,
-  control: any
   parseError?: (error: FieldError) => string
 }
 
@@ -15,7 +14,6 @@ export const TextFieldElement = ({
                                    type,
                                    required,
                                    name,
-                                   control,
                                    ...rest
                                  }: TextFieldElementProps): JSX.Element => {
 
@@ -26,7 +24,6 @@ export const TextFieldElement = ({
       <Controller
         name={name}
         rules={validation}
-        control={control}
         render={({ field: { value, onChange, onBlur }, fieldState: { invalid, error } }) =>
           <TextField
             {...rest}

@@ -1,19 +1,23 @@
-import { useForm } from 'react-hook-form'
 import { TextFieldElement } from '../FormControl/FormControl'
+import { FormContainer } from '../FormControl/FormContainer'
 
 interface FormData {
-  name: 'string'
+  email: 'email'
 }
 
 export const Login = () => {
-  const { control, handleSubmit } = useForm<FormData>()
-  const onSubmit = handleSubmit(data => console.log(data))
+  const onSubmit = (data: FormData) => console.log(data)
 
   return (
-    <form onSubmit={onSubmit}>
-      <TextFieldElement name={'firstname'} label={'Hallo'} control={control} type={'email'} required/>
-      <input type='submit'/>
-    </form>
+    <FormContainer onSuccess={onSubmit}>
+      <TextFieldElement
+        name={'email'}
+        label={'Hallo'}
+        type={'email'}
+        required
+      />
+      <input type='submit' />
+    </FormContainer>
   )
 }
 
